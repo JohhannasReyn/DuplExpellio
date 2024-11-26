@@ -1,0 +1,1 @@
+{"platforms": ["*"], "dependencies": [], "sublime_text": ">=4000", "url": "https://github.com/JohhannasReyn/DuplExpellio", "version": "1.0.0", "description": "Select or remove duplicate entries like magic."}

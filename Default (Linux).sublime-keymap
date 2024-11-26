@@ -1,0 +1,8 @@
+[
+    // To use the suggested Key Bindings for DuplExpellio...
+    /* ...just add a '/' to the beginning of this line (i.e. change this /* into this //* )
+    // "DuplExpellio" will Select (default) or Remove (optional) all duplicate entries found
+    // in the targeted text when the key combination that is defined here is pressed.
+    { "keys": ["ctrl+shift+u"], "command": "dupl_expellio"}
+    //*/
+]

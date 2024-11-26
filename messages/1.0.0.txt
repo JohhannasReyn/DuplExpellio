@@ -1,0 +1,16 @@
+DuplExpellio 1.0.0
+------------------
+
+This is a simple plugin for Sublime Text that adds the ability to quickly select (by default) 
+or remove (optional) all redundant entries in a document, or in the user's selected text.
+
+It will attempt to differentiate entries if there are delimiters in place, otherwise it will
+use the selections of each individual word (delimited by spaces).
+
+This is my second plugin for Sublime Text. My first plugin 'Lensort' sorts lines by their length
+and is purely for aesthetics, whereas this plugin has more of a practical application.
+
+Lensort can be searched for in Sublime Text's command palette via `Package Control: Install Package`
+It's home is:	https://github.com/JohhannasReyn/DuplExpellio
+
+This package's home is:   https://github.com/JohhannasReyn/DuplExpellio
