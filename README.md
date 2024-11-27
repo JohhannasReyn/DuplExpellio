@@ -26,8 +26,8 @@ Usage Options
   - If the targeted text is not the entire document, then select 
     only the desired portion; otherwise, leave unselected.
   - Via the Context Menu: right click on the ducument or selected 
-    text and select `Select or Remove Duplicates (DuplExpellio)`
-  - Via the Menu Bar: *Edit -> Select or Remove Duplicates (DuplExpellio)*
+    text and select *Select or Remove Duplicates*
+  - Via the Menu Bar: *Edit -> Select or Remove Duplicates*
   - Via Key Bindings (if enabled): Use the defined key-mapping specified in
     the sublime-keymap file. The suggested key mapping is "Ctrl+Shift+U".
   
@@ -36,7 +36,7 @@ Configuration
   - Options can be configured in DuplExpellio.sublime-settings
     To access: *Preferences -> Package Settings -> DuplExpellio*
   - For more information regarding this plugins options see the 
-    `install.txt` file found in this packages `messages` folder,
+    *install.txt* file found in this packages *messages* folder,
     or in the settings file itself.
 
 License & Contributing
