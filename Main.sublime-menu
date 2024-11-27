@@ -6,7 +6,10 @@
         "children":
         [
             {
-                "caption": "Select or Remove Duplicates (DuplExpellio)",
+                "caption": "-"
+            },
+            {
+                "caption": "Select or Remove Duplicates",
                 "command": "dupl_expellio"
             }
         ]
