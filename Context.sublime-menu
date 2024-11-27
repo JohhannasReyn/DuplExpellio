@@ -1,5 +1,5 @@
 [
 	{ "caption": "-" },
-	{ "caption": "Remove Duplicates (DuplExpellio)", "command": "dupl_expellio" },
+	{ "caption": "Select or Remove Duplicates (DuplExpellio)", "command": "dupl_expellio" },
 	{ "caption": "-" }
 ]
