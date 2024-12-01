@@ -3,14 +3,29 @@
         "caption": "Edit",
         "mnemonic": "E",
         "id": "edit",
-        "children":
-        [
+        "children": [
             {
-                "caption": "-"
+                "caption": "-",
             },
             {
-                "caption": "Select or Remove Duplicates",
-                "command": "dupl_expellio"
+                "caption": "Remove Duplicates",
+                "command": "remove_duplicates",
+                "id": "remove_duplicates"
+            }
+        ]
+    },
+    {
+        "caption": "Selection",
+        "mnemonic": "S",
+        "id": "selection",
+        "children": [
+            {
+                "caption": "-",
+            },
+            {
+                "caption": "Expand Selection to Duplicates",
+                "command": "select_duplicates",
+                "id": "expand_selection_to_duplicates"
             }
         ]
     },

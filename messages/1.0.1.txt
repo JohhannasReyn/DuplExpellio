@@ -1,3 +1,13 @@
+DuplExpellio 1.0.1
+------------------
+
+Latest fixes, removed keymap files, for keymapping refer to the file 'install.md'
+
+Separated the functionality of selecting and removing duplicate entries, making each one individually callable.
+
+Fixed issue of package not loading.
+
+
 DuplExpellio 1.0.0
 ------------------
 

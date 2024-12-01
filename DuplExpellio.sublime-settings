@@ -1,5 +1,4 @@
 {
     "delimiters": ["\n", ",", ";", " "],  // Delimiters in order of priority 
-    "threshold": 8,                       // Minimum occurrences required to qualify as a delimiter
-    "do_with_duplicates_found": "select"  // Options: "expell" (remove), "select" (highlight)
+    "threshold": 8                       // Minimum occurrences required to qualify as a delimiter
 }

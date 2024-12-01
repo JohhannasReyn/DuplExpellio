@@ -1,7 +1,16 @@
-[
-	// To add the functionality of this plugin to the context menu, making it available 
-	// by right-clicking on the targeted text, remove the '//' from lines 4, 5, and 6.
-	//{ "caption": "-" },
-	//{ "caption": "Select or Remove Duplicates", "command": "dupl_expellio" },
-	//{ "caption": "-" }
+[//*
+    {
+        "caption": "-",
+    },// To add the this plugin to the context menu, making it available
+    {// in  right-clicking on the targeted text, remove the '//' from lines 4, 5, and 6.
+        "caption": "Select Duplicates",
+        "command": "select_duplicates"// feel free to enable what you need and leave the rest
+    },// just remember there's a comma at the end of line 5 that
+    {// will need to be removed if you don't include line 7
+        "caption": "Remove Duplicates",
+        "command": "remove_duplicates"
+    },
+    {
+        "caption": "-"
+    }//*/
 ]

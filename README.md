@@ -7,38 +7,71 @@ It's home is here on [GitHub](https://github.com/JohhannasReyn/DuplExpellio/).
 
 Features
 --------
-  - Easily select or remove duplicate values
+  - Easily select or remove duplicate values.
   - Works for both standard text files or delimited files.
-  - Delimiters are searched for automatically.
-  - Optionally, a delimiter can be specified in this package's settings.
+  - Automatically detects delimiters or allows custom specification via settings.
+  - Customize the minimum threshold for delimiter qualification.
 
 Installation Options
 --------------------
-  - From within Sublime Text's Package Control: Install Package, search for DuplExpellio, select and hit enter.
-  - Or, alternatively, download this zipped folder, save it with the extension ".sublime-package"
-    (i.e. "DuplExpellio.sublime-package") in your "Sublime Text/Installed Packages" directory.
-    (On Windows this is usually "C://Users/<UserName>/AppData/Roaming/Sublime Text/Installed Packages/")
-    If Sublime Text is already open, and you don't see it listed under:
-    *Preferences -> Package Settings*, then you'll need to restart Sublime Text.
+  - **Via Package Control**:
+    From within Sublime Text, navigate to `Package Control: Install Package`, search for "DuplExpellio", select it, and hit enter.
+  - **Manual Installation**:
+    Download this zipped folder, save it with the extension `.sublime-package` (e.g., `DuplExpellio.sublime-package`), and place it in the "Installed Packages" directory:
+    - On Windows: `C:/Users/<UserName>/AppData/Roaming/Sublime Text/Installed Packages/`
+    - On Mac: `~/Library/Application Support/Sublime Text/Installed Packages/`
+    - On Linux: `~/.config/sublime-text/Installed Packages/`
+
+    Restart Sublime Text if it is already open to load the package.
 
 Usage Options
 -------------
-  - If the targeted text is not the entire document, then select 
-    only the desired portion; otherwise, leave unselected.
-  - Via the Context Menu: right click on the ducument or selected 
-    text and select *Select or Remove Duplicates*
-  - Via the Menu Bar: *Edit -> Select or Remove Duplicates*
-  - Via Key Bindings (if enabled): Use the defined key-mapping specified in
-    the sublime-keymap file. The suggested key mapping is "Ctrl+Shift+U".
-  
+  - **Select Duplicates**:
+    Navigate to `Selection -> Expand Selection to Duplicates`.
+    - Default key binding: `Alt+Shift+D`.
+  - **Remove Duplicates**:
+    Navigate to `Edit -> Remove Duplicates`.
+    - Default key binding: `Alt+Shift+X`.
+
+    **Note**: Both commands work on the entire document if no text is selected. 
+    Otherwise, they operate on the selected text only.
+
+    **Context Menu**: To add this plugins features to the context menu, extract
+    the file `Context.sublime-menu` from this package's zipped folder, or download 
+    it from the repository (found here) and save it in this packages folder in the
+    Sublime Text packages folder accessible from the menu via:
+    `Preferences`->`Browse Packages` from there, open the directory `DuplExpellio`
+    place the aforementioned file in this directory, if it doesn't exist, make it.
+    Once saved to the correct location, you'll need to uncomment the appropriate 
+    lines and save the file, once done, savek it and you should see the new 
+    lines in the context menu
+
 Configuration
 -------------
-  - Options can be configured in DuplExpellio.sublime-settings
-    To access: *Preferences -> Package Settings -> DuplExpellio*
-  - For more information regarding this plugins options see the 
-    *install.txt* file found in this packages *messages* folder,
-    or in the settings file itself.
+  - **Accessing Settings**:
+    Customize options via `Preferences -> Package Settings -> DuplExpellio -> Settings`.
 
-License & Contributing
-----------------------
- - [MIT license](LICENSE)
+  - **Key Bindings**:
+    If the default key bindings conflict with others, they can be customized. Suggested key bindings:
+    ```json
+    { "keys": ["alt+shift+d"], "command": "select_duplicates" },
+    { "keys": ["alt+shift+x"], "command": "remove_duplicates" }
+    ```
+
+  - **Settings Options**:
+    - `delimiters`: List of delimiters used to separate entries. Default: `["\n", ",", ";", " "]`.
+    - `threshold`: Minimum occurrences required to qualify as a delimiter. Default: `8`.
+
+License
+-------
+- [MIT license](LICENSE)
+
+Contact
+-------
+- **Email**: johnreyn.developer@gmail.com
+- **LinkedIn**: [Johhannas Reyn](https://www.linkedin.com/in/johhannas-reyn)
+- **GitHub**: [JohhannasReyn](https://github.com/JohhannasReyn)
+
+Contributing
+------------
+Contributions are welcome! If you encounter any issues or bugs, feel free to open an issue on the GitHub repository or contact the developer directly.
