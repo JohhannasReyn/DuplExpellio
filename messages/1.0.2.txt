@@ -1,3 +1,8 @@
+DuplExpellio 1.0.2
+------------------
+
+Updated the messages.json to match the newly updated install.md file name.
+
 DuplExpellio 1.0.1
 ------------------
 
